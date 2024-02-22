@@ -6,10 +6,6 @@ import "forge-std/Test.sol";
 import { TokenVault } from "../src/TokenVault.sol";
 import { ERC20Mock } from "openzeppelin-contracts/mocks/token/ERC20Mock.sol";
 
-interface IERC20 {
-    function balanceOf(address account) external view returns (uint256);
-}
-
 contract TokenVaultTest is Test {
 
     ERC20Mock public asset;
